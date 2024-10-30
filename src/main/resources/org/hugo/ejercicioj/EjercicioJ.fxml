@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<FlowPane id="fondo" alignment="TOP_CENTER" columnHalignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" orientation="VERTICAL" prefHeight="690.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.hugo.ejercicioj.HelloController">
+    <children>
+        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+            <children>
+                <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../Imagenes/cooperLogo.png" />
+                    </image>
+                </ImageView>
+                <Label text="CONFIGURA TU MINI COOPER" textFill="WHITE">
+                    <font>
+                        <Font size="22.0" />
+                    </font>
+                </Label>
+            </children>
+        </HBox>
+        <HBox prefHeight="25.0" prefWidth="50.0">
+            <children>
+                <ImageView fx:id="logoLuz" fitHeight="25.0" fitWidth="50.0" onMouseClicked="#mod_luz" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../Imagenes/lucesOff.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </HBox>
+        <Pane prefHeight="400.0" prefWidth="600.0">
+            <children>
+                <ImageView fx:id="imgCoche" fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../Imagenes/miniBlazingRed.png" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="imgLuz" fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                    <image>
+                        <Image url="@../../../Imagenes/autoLuz.png" />
+                    </image>
+                </ImageView>
+            </children>
+        </Pane>
+        <Label text="Selecciona tu color favorito" textFill="WHITE">
+            <font>
+                <Font size="21.0" />
+            </font>
+        </Label>
+        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+            <children>
+                <ImageView fx:id="imgRojo" fitHeight="50.0" fitWidth="50.0" onMouseClicked="#cambioColorRojo" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../Imagenes/colorBlazingRed.jpg" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="imgAzulClaro" fitHeight="50.0" fitWidth="50.0" onMouseClicked="#cambioColorAzulC" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../Imagenes/colorElectricBlue.jpg" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="imgAzulOscuro" fitHeight="50.0" fitWidth="50.0" onMouseClicked="#cambioColorAzulO" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../Imagenes/colorLapisluxuryBlue.jpg" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="imgBlanco" fitHeight="50.0" fitWidth="50.0" onMouseClicked="#cambioColorBlanco" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../Imagenes/colorPepperWhite.jpg" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="imgGris" fitHeight="50.0" fitWidth="50.0" onMouseClicked="#cambioColorGris" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../Imagenes/colorMoonwalkGrey.jpg" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="imgGrisO" fitHeight="50.0" fitWidth="50.0" onMouseClicked="#cambioColorGrisO" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../Imagenes/colorThunderGray.jpg" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="imgMarron" fitHeight="50.0" fitWidth="50.0" onMouseClicked="#cambioColorMarron" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../Imagenes/colorVolcaninOrange.jpg" />
+                    </image>
+                </ImageView>
+                <ImageView fx:id="imgNegro" fitHeight="50.0" fitWidth="50.0" onMouseClicked="#cambioColorNegro" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../Imagenes/colorMidnightBlack.jpg" />
+                    </image>
+                </ImageView>
+            </children>
+        </HBox>
+    </children>
+</FlowPane>
