@@ -12,7 +12,7 @@ import javafx.scene.input.MouseEvent;
 /**
  * Controlador de la interfaz gráfica que permite cambiar el color de un coche y activar o desactivar la luz.
  */
-public class HelloController implements Initializable {
+public class CocheController implements Initializable {
 
     @FXML
     private ImageView imgAzulClaro;
